@@ -19,3 +19,17 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return 'welcome test 1';
 });
+
+
+
+Route::group(['prefix' => 'users'],function (){
+
+    Route::get('/',function (){
+        return 'Mohammed';
+    });
+});
+
+
+Route::get('check',function (){
+    return "Middleware";
+})->middleware('auth');
