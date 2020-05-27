@@ -33,3 +33,7 @@ Route::group(['prefix' => 'users'],function (){
 Route::get('check',function (){
     return "Middleware";
 })->middleware('auth');
+
+
+
+Route::get('second','Front\SecondController@showString');
