@@ -37,3 +37,5 @@ Route::get('check',function (){
 
 
 Route::get('second','Front\SecondController@showString');
+
+Route::resource('new','NewsController');
