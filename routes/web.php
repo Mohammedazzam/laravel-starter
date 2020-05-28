@@ -50,3 +50,6 @@ Route::get('check',function (){
 Route::get('second','Front\SecondController@showString');
 
 Route::resource('new','NewsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
