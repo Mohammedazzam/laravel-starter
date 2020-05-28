@@ -28,6 +28,10 @@ Route::get('/landing', function () {
     return view('landing');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 
 Route::group(['prefix' => 'users'],function (){
 
