@@ -87,6 +87,8 @@
         {{--<p>{{$data}}</p>--}}
 
         {{--<p>{{$name}} -- {{$id}}</p>--}}
+
+        <h1>{{__('messages.welcome')}}</h1>
     </div>
 </div>
 </body>
